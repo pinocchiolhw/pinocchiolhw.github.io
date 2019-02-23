@@ -74,10 +74,10 @@ function articlePage() {
     var token = getUrlParam('access_token');
     if(token != undefined) {
         window.localStorage.setItem("access_token",token);
-        console.log(window.localStorage);
+        //console.log(window.localStorage);
         setTimeout(function() {
             window.location.href = window.location.origin + window.location.pathname + "?id="+id;
-        }, 5);
+        }, 100);
         //window.location.href = window.location.origin + window.location.pathname + "?id="+id;
     }
     getPageNum('https://api.github.com/repos/'+config.name+'/'+config.repo+'/issues/'+id+'/comments');
