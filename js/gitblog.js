@@ -69,15 +69,22 @@ function WeChart(command)
   }
 }
 
+function storeAccessToken(callback, token) {
+    window.localStorage.setItem("access_token",token);
+    callback();
+}
+
+function RedirectUrl() {
+    window.location.href = window.location.origin + window.location.pathname + "?id="+id;
+}
+
 function articlePage() {
     var id = getUrlParam('id');
     var token = getUrlParam('access_token');
     if(token != undefined) {
-        window.localStorage.setItem("access_token",token);
+        storeAccessToken(RedirectUrl, token);
         //console.log(window.localStorage);
-        setTimeout(function() {
-            window.location.href = window.location.origin + window.location.pathname + "?id="+id;
-        }, 1000);
+        
         //window.location.href = window.location.origin + window.location.pathname + "?id="+id;
     }
     getPageNum('https://api.github.com/repos/'+config.name+'/'+config.repo+'/issues/'+id+'/comments');
