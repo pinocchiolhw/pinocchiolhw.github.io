@@ -1,15 +1,15 @@
 var config = {
-    name : "your github username",
-    repo : "your github reponame",
-    client_id : "your client_id here",
-    client_secret : "your client_secret here",
+    name : "pinocchiolhw",
+    repo : "pinocchiolhw.github.io",
+    client_id : "c3841835794afb6529ce",
+    client_secret : "784be2c8e9f53e6f4cfcdfecf0f1defba59d16a9",
     title : "add your title",
     instruction : "add your instruction",
-    server_link : 'your server link here',
+    server_link : 'http://119.23.8.25/gh-oauth-server.php',
     friends : {
         //add your friends link here
         //example:
-        //imuncle : 'https://imuncle.github.io',
+        imuncle : 'https://imuncle.github.io',
     },
 };
 
