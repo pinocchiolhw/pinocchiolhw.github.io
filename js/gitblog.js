@@ -77,7 +77,7 @@ function articlePage() {
         //console.log(window.localStorage);
         setTimeout(function() {
             window.location.href = window.location.origin + window.location.pathname + "?id="+id;
-        }, 100);
+        }, 3000);
         //window.location.href = window.location.origin + window.location.pathname + "?id="+id;
     }
     getPageNum('https://api.github.com/repos/'+config.name+'/'+config.repo+'/issues/'+id+'/comments');
