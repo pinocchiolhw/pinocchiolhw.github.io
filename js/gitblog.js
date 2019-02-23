@@ -74,7 +74,9 @@ function articlePage() {
     var token = getUrlParam('access_token');
     if(token != undefined) {
         window.localStorage.setItem("access_token",token);
-        window.location.href = window.location.origin + window.location.pathname + "?id="+id;
+        console.log(window.localStorage);
+        alert(token);
+        //window.location.href = window.location.origin + window.location.pathname + "?id="+id;
     }
     getPageNum('https://api.github.com/repos/'+config.name+'/'+config.repo+'/issues/'+id+'/comments');
     $.ajax({
