@@ -75,7 +75,7 @@ function storeAccessToken(callback, token) {
 }
 
 function RedirectUrl() {
-    window.location.href = window.location.origin + window.location.pathname + "?id="+id;
+    window.location.href = window.location.origin + window.location.pathname + "?id="+getUrlParam('id');
 }
 
 function articlePage() {
