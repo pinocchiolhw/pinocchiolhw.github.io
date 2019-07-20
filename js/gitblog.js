@@ -3,9 +3,9 @@ var config = {
     repo : "pinocchiolhw.github.io",
     client_id : "c3841835794afb6529ce",
     client_secret : "784be2c8e9f53e6f4cfcdfecf0f1defba59d16a9",
-    title : "add your title",
-    instruction : "add your instruction",
-    server_link : 'http://119.23.8.25/gh-oauth-server.php',
+    title : "Pinocchio的小站",
+    instruction : "永无止境的向前迈进，不断地取得新的成绩",
+    server_link : 'http://http://49.234.38.41',
     friends : {
         //add your friends link here
         //example:
